@@ -1,0 +1,259 @@
+/* General styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-container{
+    position: relative;
+    background-image: url('../images/home_img.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* End General Styles */
+/* Start first Header */
+.first-header{
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2b2a29;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+}
+.first-header a{
+    transition: all 0.5s;
+    margin-right: 15px;
+}
+.first-header a:hover{
+    color: #f26522;
+}
+.first-header nav{
+    display: flex;
+    justify-content: center;
+}
+/* End first Header */
+/* Start Second Header */
+.second-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End Second Header */
+
+/* Start Third Header */
+.third-header{
+    /* background-color: #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px;
+}
+/* ///////////////1///////////////// */
+.third-header .menu-bar button{
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: black;
+}
+/* ///////////////2////////////////// */
+.third-header .ctn-categories-menu{
+    position: relative;
+}
+.ctn-categories-menu .ctn-btn button{
+    background-color: #2b2a29;
+    color: white;
+    padding: 6px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ctn-categories-menu .ctn-btn button:active{
+    opacity: 0.6;
+}
+.ctn-categories-menu nav{
+    display: none;
+    background-color: rgb(223, 223, 223);
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 209px;
+    line-height: 33px;
+    padding: 10px 0 10px 21px;
+    font-size: 15px;
+}
+.ctn-categories-menu nav.nav-display{
+    display: block;
+}
+.ctn-categories-menu nav a{
+    display: block;
+    color: #2b2a29;
+}
+
+/* ////////////////////3/////////////////////// */
+.search-bar form{
+    display: flex;
+    align-items: center;
+}
+.search-bar form input{
+    flex-grow: 0;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    width: 419px;
+    font-size: 16px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+}
+.search-bar form button{
+    flex-grow: 0;
+    border: none;
+    background-color: #f26522;
+    font-size: 16px;
+    padding: 10px 13px;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    cursor:pointer;
+}
+.search-bar form button i{
+    color: white;
+}
+
+/* ////////////////////4///////////////////// */
+.ctn-language-menu{
+    position: relative;
+}
+.ctn-language-menu .ctn-btn button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    cursor: pointer;
+
+}
+.ctn-language-menu nav{
+    display: none;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    background-color: white;
+    padding: 6px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+.ctn-language-menu nav a span{
+    margin-right: 10px;
+    color: #2b2a29;
+    font-size: 13px;
+}
+.ctn-language-menu .ctn-btn button span{
+    transition: 0.5s;
+}
+.ctn-language-menu .ctn-btn button:hover span{
+    color: #f26522;
+}
+.ctn-language-menu nav.nav-display{
+    display: block;
+}
+/* ////////////////5/////////////////////// */
+
+.ctn-icons{
+    display: flex;
+    color: white;
+}
+.ctn-icons .name-icon{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.ctn-icons .name-icon span{
+    transition: color 0.5s;
+}
+.ctn-icons .name-icon:hover span{
+    color: #f26522;
+}
+/* End Third Header */
+/* Start responsive Header */
+.responsive-header{
+    display: none;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.responsive-header .ctn-language-menu button {
+    background: none;
+    color: white;
+}
+/* End responsive Header */
+
+/* Start Main Header */
+
+.main-header{
+    position: relative;
+}
+
+/* End Main Header */
+
+/* Media Queries <= 1036px */
+@media (width <= 1130px){
+    .third-header{
+        padding: 10px 30px;
+    }
+    .third-header .ctn-categories-menu{
+        display: none;
+    }
+    .search-bar form input{
+        width: 240px;
+    }
+    .main-container{
+        background-size:100% 100%;
+    }
+}
+
+/* Media Queries <= 866px*/
+@media (width <= 866px) {
+    .first-header{
+        display: none;
+    }
+    .main-container{
+        padding-top: 20px;
+        background-size: cover;
+        background-position: 51% 150%;
+    }
+}
+
+/* Media Queries <= 711px*/
+@media (width <= 711px) {
+    .third-header .ctn-language-menu{
+        display: none;
+    }
+    .third-header .ctn-icons {
+        display: none;
+    }
+    .responsive-header{
+        display: flex;
+        align-items: center;
+    }
+    .search-bar form input{
+        width: 400px;
+    }
+}
+
+/* Media Quereis <= 570px */
+@media (width <= 570px) {
+    .search-bar{
+        width: 70%;
+    }
+    .search-bar form,.search-bar form input{
+        width: 100%;
+    }
+}
