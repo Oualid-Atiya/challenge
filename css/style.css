@@ -260,6 +260,7 @@ a{
     padding: 20px;
     height: 225px;
     margin-top: 30px;
+    margin-bottom: 130px;
 }
 .slides,.slides,.slide{
     width: 100%;
@@ -300,21 +301,104 @@ a{
     border: none;
     font-size: 18px;
     cursor: pointer;
+    top: 45%;
 }
 .slider .prev-btn{
     left: 130px;
-    top: 45%;
 }
 .slider .next-btn{
     right: 130px;
-    top: 45%;
 }
 /* End Slider */
 
+/* /////////////*/
 
+.mini-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mini-title h2{
+    font-size: 40px;
+    color:#2b2a29;
+}
+/* /////////////*/
 
+/* Start Product Part */
 
+.products{
+    width: 100%;
+    height:500px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 130px;
+}
 
+.products .product{
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    box-shadow:0px 0px 15px rgba(0, 0,0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+.product h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.product p > span{
+    color: #f26522;
+}
+.product p .price{
+    color: #2b2a29;
+    font-weight: 100;
+}
+.product div.ctn-img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+div.ctn-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.product .button-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-part button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #f26522;
+    cursor: pointer;
+}
+/* End Product Part */
+
+/* /////////////////// */
+
+.slider-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.slider-button button{
+    background-color: #2b2a29;
+    color: white;
+    font-size: 24px;
+    border: none;
+    margin-right: 10px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+/* /////////////////// */
 
 /* /////////////////////////////////////////////// */
 /* Media Queries <= 1036px */
@@ -330,6 +414,9 @@ a{
     }
     .main-container{
         background-size:100% 100%;
+    }
+    .slide h1 {
+        font-size: 40px;
     }
 }
 
@@ -359,6 +446,12 @@ a{
     .search-bar form input{
         width: 400px;
     }
+    .slider .next-btn {
+        right: 40px;
+    }
+    .slider .prev-btn {
+        left: 40px;
+    }
 }
 
 /* Media Quereis <= 570px */
@@ -368,5 +461,14 @@ a{
     }
     .search-bar form,.search-bar form input{
         width: 100%;
+    }
+    .slide h1 {
+        font-size: 30px;
+    }
+    .slider .next-btn {
+        right: 30px;
+    }
+    .slider .prev-btn {
+        left: 30px;
     }
 }
