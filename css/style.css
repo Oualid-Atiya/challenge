@@ -221,6 +221,7 @@ a{
     color: white;
     padding: 20px;
     transition: all 0.5s;
+    z-index: 999;
 }
 .show-nav{
     margin-left: 0;
@@ -400,6 +401,65 @@ div.ctn-img img{
 }
 /* /////////////////// */
 
+/* Start Footer */
+
+footer{
+    background-color: #2b2a29;
+    color: white;
+    padding: 60px 0 20px 0;
+    text-align: center;
+
+}
+.email-subscribe{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    border-bottom: 1px solid white;
+    width: 500px;
+    padding: 10px;
+}
+.email-subscribe input::placeholder{
+    color: white;
+}
+.email-subscribe input{
+    flex-grow: 0;
+    width: 90%;
+    border: none;
+    background: none;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}
+.email-subscribe button{
+    flex-grow: 0;
+    border: none;
+    background: none;
+    color:#f26522;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////// */
+footer nav{
+    margin: 20px 0;
+}
+footer nav a {
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+footer nav a:hover{
+    color: #f26522;
+}
+/* ////////////////////////////////// */
+
+/* ////////////////////////////////// */
+
+.help-number{
+    margin: 20px 0;
+}
+
+/* ////////////////////////////////// */
+/* End Footer */
 /* /////////////////////////////////////////////// */
 /* Media Queries <= 1036px */
 @media (width <= 1130px){

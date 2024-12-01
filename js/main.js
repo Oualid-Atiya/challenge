@@ -5,7 +5,7 @@ document.getElementById('category-btn').addEventListener('click', () =>  {
     }
 );
 
-let languageBtn = document.querySelectorAll('.ctn-language-menu .language-btn');
+const languageBtn = document.querySelectorAll('.ctn-language-menu .language-btn');
 languageBtn.forEach((element) => element.addEventListener('click' ,() => {
     let navLang = document.querySelectorAll('.ctn-language-menu nav');
     navLang.forEach((element) => element.classList.toggle('nav-display'))
@@ -13,12 +13,15 @@ languageBtn.forEach((element) => element.addEventListener('click' ,() => {
 
 ////////////////////////////////////////////////
 
-let responsiveNav = document.querySelector('.responsive-nav');
+const responsiveNav = document.querySelector('.responsive-nav');
+const mainContainer = document.querySelector('.main-container');
 document.getElementById('menu-btn').addEventListener('click' , () => {
+    mainContainer.style = 'overflow-y : hidden ;'
     responsiveNav.classList.toggle('show-nav');
 })
 
 document.getElementById('x-btn').addEventListener('click' ,() => {
+    mainContainer.style = 'overflow-y :none ;'
     responsiveNav.classList.remove('show-nav');
 })
 
